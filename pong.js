@@ -43,6 +43,10 @@ class Ball extends Rect
      }
 }
 
+class Player extends Rect
+{
+  
+}
 class Pong
 {
   constructor(canvas)
@@ -84,7 +88,8 @@ class Pong
                             rect.size.x,rect.size.y);
    }
 
-   update(dt){
+   update(dt)
+   {
      this.ball.pos.x += this.ball.vel.x * dt;
      this.ball.pos.y += this.ball.vel.y * dt;
 
@@ -96,7 +101,7 @@ class Pong
      }
 
         this.draw();
-            
+
 
    }
 }
